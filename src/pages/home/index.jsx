@@ -45,7 +45,7 @@ export default function Home() {
         <div className="grid space-y-12">
           {Object.keys(newBlogs).map((date, index) => (
             <div key={index}>
-              <h2 className="mb-6">{dayjs(date).format("MMMM YYYY")}</h2>
+              <h3 className="mb-6">{dayjs(date).format("MMMM YYYY")}</h3>
               <div className="grid md:flex md:items-center md:flex-wrap gap-4">
                 {newBlogs[date].map((blog) => (
                   <Link

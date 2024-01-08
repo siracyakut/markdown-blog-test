@@ -2,72 +2,74 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-black text-white;
-}
+@layer base {
+  body {
+    @apply bg-black text-white;
+  }
 
-html,
-body,
-#root {
-  @apply h-full;
-}
+  html,
+  body,
+  #root {
+    @apply h-full;
+  }
 
-.markdown {
-  @apply leading-7 text-[16px];
-}
+  .markdown {
+    @apply leading-7 text-[16px];
+  }
 
-.markdown a {
-  @apply text-blue-400 underline tracking-wide;
-}
+  .markdown a {
+    @apply text-blue-400 underline tracking-wide;
+  }
 
-.markdown p {
-  @apply py-2;
-}
+  .markdown p {
+    @apply py-2;
+  }
 
-.markdown code {
-  @apply py-[0.2em] px-[0.4em] rounded-md bg-[rgba(147,197,253,.1)] text-[rgb(147,197,253)];
-}
+  .markdown code {
+    @apply py-[0.2em] px-[0.4em] rounded-md bg-[rgba(147,197,253,.1)] text-[rgb(147,197,253)];
+  }
 
-.markdown pre {
-  @apply bg-[#12161d] p-4 rounded-lg;
-}
+  .markdown pre {
+    @apply bg-[#12161d] p-4 rounded-lg;
+  }
 
-.markdown pre code {
-  @apply !text-[16px] !text-white !bg-transparent !p-0;
-}
+  .markdown pre code {
+    @apply !text-[16px] !text-white !bg-transparent !p-0;
+  }
 
-.markdown h1 {
-  @apply text-5xl font-extrabold my-4;
-}
+  .markdown h1 {
+    @apply text-5xl font-extrabold my-4;
+  }
 
-.markdown h2 {
-  @apply text-4xl font-bold my-4;
-}
+  .markdown h2 {
+    @apply text-4xl font-bold my-4;
+  }
 
-.markdown h3 {
-  @apply text-3xl font-bold my-4;
-}
+  h3 {
+    @apply text-3xl font-bold my-4;
+  }
 
-.markdown h4 {
-  @apply text-2xl font-bold my-4;
-}
+  .markdown h4 {
+    @apply text-2xl font-bold my-4;
+  }
 
-.markdown h5 {
-  @apply text-xl font-bold my-4;
-}
+  .markdown h5 {
+    @apply text-xl font-bold my-4;
+  }
 
-.markdown h6 {
-  @apply text-lg font-bold my-4;
-}
+  .markdown h6 {
+    @apply text-lg font-bold my-4;
+  }
 
-.markdown ul {
-  @apply mb-4 relative;
-}
+  .markdown ul {
+    @apply mb-4 relative;
+  }
 
-.markdown ul li {
-  @apply indent-8 mb-2;
-}
+  .markdown ul li {
+    @apply indent-8 mb-2;
+  }
 
-.markdown ul li::before {
-  @apply absolute content-["•"] -left-5;
+  .markdown ul li::before {
+    @apply absolute content-["•"] -left-5;
+  }
 }
